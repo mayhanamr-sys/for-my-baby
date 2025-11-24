@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #800020;
+    color: white;
+    text-align: center;
+}
+.container {
+    margin-top: 50px;
+}
+.welcome {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px #000;
+}
+.layer {
+    width: 200px;
+    height: 50px;
+    margin: 0 auto 5px auto;
+    background-color: #ffb6c1;
+    border-radius: 15px;
+}
+.candle {
+    display: inline-block;
+    width: 10px;
+    height: 40px;
+    background-color: yellow;
+    margin: 0 10px;
+}
+h1 {
+    font-size: 32px;
+    margin: 30px 0;
+}
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#yesBtn { background-color: #ff4b87; color: white; }
+#noBtn { background-color: #555; color: white; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="welcome">Hello! My love!</div>
+    <div class="layer">
+        <div class="candle"></div>
+        <div class="candle"></div>
+        <div class="candle"></div>
+    </div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+
+    <h1>Do you want to see your birthday gift?</h1>
+
+    <button id="yesBtn" onclick="goToGift()">Yes</button>
+    <button id="noBtn" onclick="noAction()">No</button>
+</div>
+
+<script>
+function goToGift() {
+    window.location.href = "gift.html";
+}
+function noAction() {
+    alert("Okay! Maybe later 🎉");
+}
+</script>
+
+</body>
+</html>
